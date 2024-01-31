@@ -1,27 +1,19 @@
 import 'package:flutter/material.dart';
 
-//import 'package:roll_dice_app/styled_text.dart';
-
-//custom widgets - widgets created by me to seperate the code -custom widgets are all about of storing combinations of other widgetss and combinations
+import 'package:roll_dice_app/styled_text.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.topRight;
 
 class GradientContainer extends StatelessWidget {
-  // const GradientContainer({
-  //   super.key,
-  //   required this.myGradientColors,
-  // });
-  // // const GradientContainerAju(this.myGradientColors, {super.key}); //this also works fine,
-  //also we can use multiple constructor functions
-  const GradientContainer.purpleAju({super.key})
-      : color1 = Colors.purple,
-        color2 = Colors.deepPurple;
+  const GradientContainer(
+    this.color1,
+    this.color2, {
+    super.key,
+  });
+  // const GradientContainerAju(this.myGradientColors, {super.key}); //this also works fine,
 
-  final Color color1;
-  final Color color2;
-
-  //final List<Color> myGradientColors;
+  final Color color1, color2;
 
   @override
   Widget build(context) {
