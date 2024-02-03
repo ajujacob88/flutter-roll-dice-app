@@ -10,7 +10,7 @@ class GradientContainer extends StatelessWidget {
     this.color2, {
     super.key,
   });
-  // const GradientContainerAju(this.myGradientColors, {super.key}); //this also works fine,
+  // const GradientContainerAju(this.myGradientColors, {super.key}); //this also works fine,,
 
   final Color color1, color2;
 
